@@ -1,0 +1,30 @@
+.heading-secondary {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+    display: inline-block;
+    background-image: url('../../img/leef-about-heading.jpeg');
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(3deg) skewX(8deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($col-black, .3);
+    }
+}
+
+.sub-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

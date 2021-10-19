@@ -1,0 +1,233 @@
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/typography";
+@import "base/components/buttons";
+@import "base/utilities";
+@import "pages/home";
+@import "base/components/feature-box";
+@import "base/components/footer";
+@import "layouts/navigation";
+@import "abstracts/mixins";
+@import "base/base";
+
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient( to right bottom,rgba($col-green-shaded, 0.8), rgba($col-blue-shaded, 0.8) ), url(https://images.pexels.com/photos/361104/pexels-photo-361104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top:6rem;
+        left:6rem;
+    }
+
+    &__logo {
+        height:3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 55%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.logo {
+    height:3.5rem;
+}
+
+.text-box {
+    position: absolute;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: $col-white;
+    text-transform: uppercase;
+    margin-bottom: 7rem;
+
+    &-main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 300;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in;
+    }
+    
+    &-sub {
+        margin-top: 3rem;
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+        text-align: center;
+        animation-name: moveInRight;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in;
+    }  
+}
+
+.line-title-wrap {
+    content: '';
+    padding: .01em;
+    width:96%;
+    background: $col-white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-1-of-2 {
+    width: 35vw;
+}
+
+.col-1-of-2-right {
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.resume-box {
+    text-align: center;
+}
+
+.skills-box h3 {
+    text-align: center;
+}
+
+.skills-box-list {
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+
+.skills-list-item {
+    display: inline;
+    margin: 4rem;
+    padding:.5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    line-height: 5rem;
+    background-image: linear-gradient(to right bottom,rgba($col-blue-shaded, .08), rgba($col-blue-light-shaded, .08));
+    color: $col-grey-dark;
+}
+
+
+
+.resume-image {
+    width: 20rem;
+
+    &:hover {
+        transform: scale(1.6);
+        box-shadow: 0 .1rem 2rem rgba($col-black, 0.356);
+        transition: .3s ease-in-out;
+    }
+}
+
+// .contact-anchor:target {
+//     display: block;
+//     position: relative;
+//     top: -250px;
+//     visibility: hidden;
+// }
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c-f-label {
+    background-image: linear-gradient(to right bottom,$col-green-shaded, $col-blue-light-shaded);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    margin: 4rem;
+}
+
+.c-f-label span {
+    margin: 0;
+    padding: 0;
+}
+
+.c-f-label textarea {
+    border: 3px solid $col-blue-shaded;
+}
+
+#label-message {
+    margin-bottom: 5.5rem;
+}
+
+.section-book {
+    background-color:$col-light-grey;
+    padding: 15rem 0;
+    font-size: 3rem;
+    color: $col-green-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-book h2 {
+    margin-bottom: 5rem;
+    letter-spacing: 1.5rem;
+    font-size: 5rem;
+    font-weight: 1000;
+}
+
+.email-subject-box label{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.contact-form-container input, textarea{
+    border-width: 0 0 2px 0;
+    border-color: $col-blue-shaded;
+    background: transparent;
+    width: 20rem;
+}
+
+.contact-form-container input:focus, textarea:focus{
+    outline: none;
+    font-size: 2rem;
+    color:  $col-blue-shaded;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.contact-form-container input:after {
+    outline: none;
+    font-size: 2rem;
+    color:  $col-blue-shaded;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.valid {
+    content: '';
+}
+.invalid {
+    font-size: .7rem;
+    color: rgba(150, 46, 46, 0.815);
+}
+
+
+
+
+

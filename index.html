@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/main.js"></script> <!-- Call handler script -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="sass/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/monkey-icon.png">
+        
+        <title>Portfolio | Adam Green</title>
+    </head>
+    <body>
+        
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#header" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#heading-secondary" class="navigation__link">About</a></li>
+                    <li class="navigation__item"><a href="#resume" class="navigation__link">Resume</a></li>
+                    <li class="navigation__item"><a href="#contact-anchor" class="navigation__link">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header" >
+            <a name="header"></a>
+            <div class="header__logo-box">
+                <img src="img/monkey-logo.png" alt="logo" class="header__logo">
+            </div>
+            <div class="text-box">
+                <h1 class="heading-primary"> 
+                    <p class="line-title-wrap"></p>
+                    <span class="heading-primary-main">ADAM GREEN</span>
+                    <p class="line-title-wrap"></p>
+                    <span class="heading-primary-sub">&lt MY FRONTEND PORTFOLIO &gt </span>
+                </h1>
+                <div class="learn-more">
+                <a href="#heading-secondary" class="btn btn-white">LEARN MORE</a>
+                <span class="point-down"> ˅ </span>
+                </div>
+            </div>
+           
+        </header>
+
+        <main>
+            <section class="section-about">
+                <div class="u-center-text u-margin-bottom-8">
+                    <h2 class="heading-secondary" > <a name="heading-secondary"></a>Who am I and what can I do?</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="sub-heading u-margin-bottom-small">
+                            Past and present
+                        </h3>
+                        <p class="paragraph">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, veritatis? Impedit quos, assumenda 
+                            expedita id in explicabo quae est quibusdam tempora minus nihil. Optio obcaecati culpa maiores! Reiciendis, quos ducimus?
+                        </p>
+                        <h3 class="sub-heading u-margin-bottom-small">
+                            Future
+                        </h3>
+                        <p class="paragraph">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, veritatis? Impedit quos, assumenda 
+                            expedita id in explicabo quae est quibusdam tempora minus nihil. Optio obcaecati culpa maiores! Reiciendis, quos ducimus?
+                        </p>
+                    </div>
+                    <div class="col-1-of-2-right">
+                        <div class="resume-box">
+                            <h3 class="sub-heading u-margin-bottom-small"> <a name="resume"></a>
+                                Check out my resume
+                            </h3>
+                            <a href="/img/resume..pdf">
+                                <img class="resume-image" src="img/resume.-1.png">
+                            </a>
+                        </div>
+                        <div class="skills-box">
+                            <h3 class="sub-heading u-margin-bottom-small">Skills</h3>
+                            <ul class="skills-box-list">
+                                <li class="skills-list-item">html</li>
+                                <li class="skills-list-item">SASS</li>
+                                <li class="skills-list-item">SCSS</li>
+                                <li class="skills-list-item">Javascript</li>
+                                <li class="skills-list-item">Github Repositories</li>
+                                <li class="skills-list-item">html5/css3 training</li>
+                                <li class="skills-list-item">react</li>
+                                <li class="skills-list-item">JSON</li>
+                                <li class="skills-list-item">Responsive Design</li>
+                                <li class="skills-list-item">WPO</li>
+                                <li class="skills-list-item">SEO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-features">
+
+                <div class="row shrink">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fas fa-balance-scale-left"></i>
+                            <h3 class="sub-heading u-margin-bottom-small">Efficient </h3>
+                            <p class="feature-box__text">
+                             Fast load times and lag free interaction are of the highest priority. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row shrink">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fas fa-mobile-alt"></i>
+                            <h3 class="sub-heading u-margin-bottom-small">Responsive</h3>
+                            <p class="feature-box__text">
+                            Layouts that effectively scale to any device and run on all popular browsers. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row shrink">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon far fa-lightbulb"></i>
+                            <h3 class="sub-heading u-margin-bottom-small">Intuitive</h3>
+                            <p class="feature-box__text">
+                             Tidy, readable and reusable code and file structure which meets industry standard practices. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row shrink">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon far fa-heart"></i>
+                            <h3 class="sub-heading u-margin-bottom-small">User Friendly </h3>
+                            <p class="feature-box__text">
+                             Straight forward UX/UI with fluid layouts arranged logically. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section-book">
+                <a name="contact-anchor"></a> 
+                <h2 class="heading-secondary u-margin-bottom-small" ><a name="section-book"></a>Get in Touch</h2>
+                <form action="https://formspree.io/f/xdoyjjqg" method="POST" class="contact-form-container">
+                    <div class="email-subject-box">
+                        <label class="c-f-label">
+                            Email
+                            <input placeholder="johndoe@gmail.com" type="email" name="email" class="email"/> 
+                        </label class="c-f-label">
+                        <label class="c-f-label">
+                            Subject
+                            <input placeholder="Type here" type="text" name="subject" class="subject"/>
+                        </label>
+                    </div>
+                    <span class="c-f-label">Message</span>
+                    <label  id="label-message">
+                        
+                        <textarea placeholder="Type message here..." name="message" class="message"></textarea>
+                    </label>
+                    <div class="status">
+
+                    </div>
+                    <button type="submit" class="contact-btn"> Send </button>
+                </form>
+            </section>
+
+            <footer class="footer-section">
+                <div class="footer-glass-container">
+                    <h2>Adam Green - Portfolio</h2>
+                    
+                    <div class="social-icons-box">
+                        <ul>
+                            <a href="https://github.com/thegeordienomad"><li class="fab fa-github-square"> </li></a>
+                            <a href="https://codepen.io/thegeordienomad"> <li class="fab fa-codepen"></li> </a>
+                            <a href="https://www.linkedin.com/in/the-geordie-nomad-adam-green-b17748222/"> <li class="fab fa-linkedin"></li> </a>
+                            <a href="#contact-anchor"><li class="far fa-envelope"></li></a>
+                        </ul>
+                    </div>
+                    <p>adamgreenhq@gmail.com  <br>  © Adam Green. All Rights Reserved</p>
+                </div>
+            </footer>
+        </main>
+
+
+    <script src="js/navigation.js"></script>    
+    </body>
+</html>

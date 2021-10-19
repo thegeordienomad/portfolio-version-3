@@ -1,0 +1,22 @@
+.section-about {
+    background-color:$col-light-grey;
+    padding: 25rem 0;
+    margin-top: -20vh;
+}
+
+.section-features {
+    padding: 20rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient( to right bottom,rgba($col-green-shaded, 0.8), rgba($col-blue-shaded, 0.8) ), url(https://images.pexels.com/photos/247522/pexels-photo-247522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.section-book {
+    padding:15rem 0;
+    color: $col-green-shaded;
+}
+
+.book {
+    background: $col-black;
+}
